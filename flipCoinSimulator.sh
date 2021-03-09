@@ -1,6 +1,9 @@
 #!/bin/bash
 headcount=0
 tailcount=0
+diff=0
+while [ $diff -lt 2 ]
+do
 while [ $headcount -lt 21 -a  $tailcount -lt 21 ]
 do 
 flip=$(( RANDOM%2 ))
@@ -23,4 +26,5 @@ echo "tail won by difference" $diff
 else 
 echo "tie"
 fi
+done
 done
